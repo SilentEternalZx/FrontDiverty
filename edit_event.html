@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscar y Editar Evento</title>
+    <link rel="stylesheet" href="/style_eventos.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Editar Evento</h1>
+        <form id="searchForm">
+            <label for="cedula">Número de Cédula del Cliente:</label>
+            <input type="text" id="cedula" required>
+            <button type="submit">Buscar Evento</button>
+        </form>
+
+        <div id="eventDetails" style="display: none;">
+            <h2>Detalles del Evento</h2>
+            <form id="editEventForm">
+                <input type="hidden" id="eventoId">
+                
+                <p id="nombreEventoDisplay"></p>
+                <p id="clienteDisplay"></p>
+
+                <label for="fechaHoraEvento">Fecha y hora del evento:</label>
+                <input type="datetime-local" id="fechaHoraEvento" required>
+
+                <label>Servicios tomados:</label>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="servicios" value="photobook"> Photobook</label>
+                    <label><input type="checkbox" name="servicios" value="video"> Video</label>
+                    <label><input type="checkbox" name="servicios" value="cabina360"> Cabina 360</label>
+                    <label><input type="checkbox" name="servicios" value="cabinaDivertycam"> Cabina Divertycam</label>
+                    <label><input type="checkbox" name="servicios" value="albumTradicional"> Álbum tradicional</label>
+                    <label><input type="checkbox" name="servicios" value="libroDeFirmas"> Libro de firmas</label>
+                    <label><input type="checkbox" name="servicios" value="clipDeInicio"> Clip de inicio</label>
+                </div>
+
+                <label for="direccionEvento">Dirección del evento:</label>
+                <input type="text" id="direccionEvento" required>
+
+                <button type="submit">Actualizar Evento</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="edit_event.js"></script>
+</body>
+</html>

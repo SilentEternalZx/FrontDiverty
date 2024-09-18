@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DivertyCam - Gestión de Roles</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>DivertyCam</h1>
+        <nav>
+            <ul>
+                <li class="configuracion">
+                    <a href="#">Configuración</a>
+                    <ul>
+                        <li><a href="./usuarios.html">Usuarios</a></li>
+                        <li><a href="./roles.html">Roles</a></li>
+                        <li><a href="#permisos">Permisos</a></li>
+                        <li><a href="#privilegios">Privilegios</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main role="main">
+        <section id="roles" class="section">
+            <h2>Gestión de Roles</h2>
+
+            <div class="crud-container">
+                <button id="open-role-modal">Agregar Rol</button>
+
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Nombre</th>                         <th>Descripción</th>
+                                <th>Permisos</th>
+                                <th>Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Aquí se insertarán dinámicamente las filas de roles -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div id="role-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Agregar Rol</h2>
+                    <form id="role-form">
+                        <input type="text" id="name" placeholder="Nombre del Rol" required>
+                        <div class="permisos-checkbox">
+                            <!-- Aquí se generarán dinámicamente los checkboxes de permisos -->
+                        </div>
+                        <div class="modal-buttons">
+                            <button type="submit">Agregar Rol</button>
+                            <button type="button" class="cancel-button">Cancelar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        © 2024 Sistema de Gestión de Roles
+    </footer>
+
+    <div class="modal-backdrop"></div>
+
+    <script src="roles.js"></script>
+</body>
+</html>

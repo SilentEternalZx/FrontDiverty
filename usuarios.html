@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DivertyCam - Gestión de Usuarios</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div>
+            <h1>DivertyCam</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Configuración</a>
+                        <ul>
+                            <li><a href="./usuarios.html">Usuarios</a></li>
+                            <li><a href="./roles.html">Roles</a></li>
+                            <li><a href="#permisos">Permisos</a></li>
+                            <li><a href="#privilegios">Privilegios</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        </header>
+        
+        <main role="main">
+            <section id="usuarios" class="section">
+                <h2>Gestión de Usuarios</h2>
+                <div class="crud-container">
+                    <button id="open-modal">Agregar Usuario</button>
+                    <div class="table-container">
+                        <!-- La tabla se llenará dinámicamente con JavaScript -->
+                    </div>
+                </div>
+        
+                <div id="user-modal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <h2>Agregar Usuario</h2>
+                        <form id="user-form">
+                            <input type="text" id="name" placeholder="Nombre" required>
+                            <input type="email" id="email" placeholder="Email" required>
+                            <input type="password" id="password" placeholder="Contraseña" required>
+                            <select id="role" required>
+                                <option value="">Seleccionar Rol</option>
+                                <!-- Las opciones se llenarán dinámicamente -->
+                            </select>
+                            <div class="modal-buttons">
+                                <button type="submit">Agregar Usuario</button>
+                                <button type="button" class="cancel-button">Cancelar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+        
+        <div class="modal-backdrop"></div>
+        
+        <script src="usuarios.js"></script>

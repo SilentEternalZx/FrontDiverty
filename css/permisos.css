@@ -1,0 +1,100 @@
+@import url('https://fonss.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oppen Sans', sans-serif;
+   
+}
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+    padding-top: 200px; /* Espacio para el navbar fijo */
+    
+
+}
+
+.navbar {
+    background-color: #212529;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+.navbar-brand {
+    color: #ffffff;
+    font-weight: bold;
+}
+.navbar-nav .nav-link {
+    color: white;
+    font-size: 0.95rem;
+    letter-spacing: 0.0625em;
+}
+.container {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+th {
+    background-color: rgb(58, 56, 56);
+    color: white;
+}
+button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.edit-btn {
+    background-color: #a3a8a6;
+    color: white;
+}
+.delete-btn {
+    background-color: #a3a8a6;
+    color: white;
+}
+#btn-open-privilege {
+    background-color: #a3a8a6;
+    color: white;
+}
+.add-item {
+    margin-top: 20px;
+}
+.add-item input {
+    padding: 5px;
+    margin-right: 10px;
+}
+#addPermission, #addPrivilege {
+    background-color: rgb(68, 66, 66);
+    color: white;
+}
+#modal::backdrop {
+    background-color: rgba(0,0,0,.55);
+}
+#modal {
+    width: 50%;
+    border: none;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin:auto;
+    
+    
+}

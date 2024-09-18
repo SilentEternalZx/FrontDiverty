@@ -1,0 +1,109 @@
+@import url('https://fonss.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+        :root {
+            --primary-color: #8A2BE2; /* blueviolet */
+            --secondary-color: #f5f5f5;
+            --text-color: #008B8B; /* darkcyan */
+            --border-radius: 8px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Open Sans", sans-serif;
+        }
+
+        body {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+            background-image: url('../svg/style.svg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center bottom;/
+            
+           
+        }
+
+        .container {
+            width: 90%;
+            max-width: 800px;
+            height: auto;
+            min-height: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: var(--border-radius);
+            box-shadow: 0 10px 30px rgba(138, 43, 226, 0.2);
+            border: 2px solid black;
+            
+            
+        }
+
+        .container-success {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 40px;
+           
+        }
+
+        .container-success h1 {
+            margin-bottom: 30px;
+            font-size: 30px;
+            font-style: italic;
+            color: black;
+        }
+
+        .image {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 30px;
+        }
+
+        .image img {
+            max-width: 100px;
+            height: auto;
+        }
+
+        .button a {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #a3a8a6;
+            color: white;
+            text-decoration: none;
+            border-radius: var(--border-radius);
+            font-size: 16px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .button a:hover {
+            background-color: #606261;
+            transform: translateY(-2px);
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                width: 95%;
+            }
+            
+            .container-success {
+                padding: 30px;
+            }
+
+            .container-success h1 {
+                font-size: 24px;
+            }
+
+            .image img {
+                max-width: 80px;
+            }
+        }

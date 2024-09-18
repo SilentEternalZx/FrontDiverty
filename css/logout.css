@@ -1,0 +1,24 @@
+@import url('https://fonss.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+/*Tipografía*/
+*{
+    margin: 0px;    
+    padding:0px ;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+    
+}/* Selector universal */
+
+body{
+    width: 100%;/* Ancho del borde*/
+    height:100vh;
+    display: flex;
+    justify-content: center;  /*Centrar recuadro*/
+    align-items: center;
+
+
+}
+
+.container{
+    
+    font-size: 20px
+}

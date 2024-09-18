@@ -1,0 +1,45 @@
+@import url('https://fonss.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+/*Tipografía*/
+*{
+    margin: 0px;    
+    padding:0px ;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}/* Selector universal */
+
+body{
+    width: 100%;/* Ancho del borde*/
+    height:100vh;
+    display: flex;
+    justify-content: center;  /*Centrar recuadro*/
+    align-items: center;
+    background: linear-gradient(to bottom, #4E2394, #DBC9F5);
+    
+}
+.container{ /*Acceder a la clase container*/
+    width: 800px;
+    height:500px;
+    display:flex;
+   border-radius: 2%;
+    background: rgb(255, 255, 255);
+   
+}
+
+.container-form{ /*Acceder a la clase container-form*/
+    width:100%;
+    
+    }
+.container-form form{  /*Acceder al formulario*/
+    height:100%;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items:center;
+
+    }
+
+.container-form h1{
+    color:black;
+   
+}
+

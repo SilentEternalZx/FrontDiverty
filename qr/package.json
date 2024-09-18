@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "qr": "file:",
+    "url-parse": "^1.5.10",
+    "urlparse": "^0.0.1"
+  },
+  "name": "qr",
+  "version": "1.0.0",
+  "main": "qrcode.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "type": "module"
+}
