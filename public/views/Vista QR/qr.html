@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DivertyCam QR</title>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  <script defer src="../../../js/qrcodigo.js"></script>
+  <link rel="stylesheet" href="../../../css/qr.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>DivertyCam QR</h1>
+    <div id="qrcode"></div>
+    <div class="items">
+      <input type="text" id="text" placeholder="youtube.com" value="https://www.facebook.com/fotografiaprofesionalmedellin">
+      <input type="button" value="Convert" id="convert">
+      <div id="error" style="color: red;"></div>
+      <div id="loading" style="display: none;">Loading...</div>
+    </div>
+  </div>
+</body>
+
+</html>

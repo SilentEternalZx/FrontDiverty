@@ -85,10 +85,10 @@ button {
     background-color: rgb(68, 66, 66);
     color: white;
 }
-#modal::backdrop {
+#modalPrivilegio::backdrop {
     background-color: rgba(0,0,0,.55);
 }
-#modal {
+#modalPrivilegio {
     width: 50%;
     border: none;
     border-radius: 5px;
@@ -98,3 +98,29 @@ button {
     
     
 }
+
+#editModal{
+    width: 70%;
+    border: none;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin:auto;
+}
+#editModal::backdrop{
+    background-color: rgba(0,0,0,.55);
+}
+#editModal h2 {
+    text-align: center;
+}
+#btn-close-edit{
+    background-color:  #a3a8a6;
+    color:white;
+}
+#editModal button{
+    background-color:  #a3a8a6;;
+    color:white;
+    
+  
+}
+

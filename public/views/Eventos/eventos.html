@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Eventos</title>
+    <link rel="stylesheet" href="../../../css/clientes.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Registro de Eventos</h1>
+        <form id="eventForm">
+            <label for="nombreEvento">Nombre del evento:</label>
+            <input type="text" id="nombreEvento" required>
+
+            <label for="fechaHoraEvento">Fecha y hora del evento:</label>
+            <input type="datetime-local" id="fechaHoraEvento" required>
+
+            <label for="clienteId">Cliente:</label>
+            <select id="clienteId" required>
+            <option value="">Seleccione un cliente</option>
+                <!-- Las opciones se cargarán dinámicamente con JavaScript -->
+            </select>
+
+            <label>Servicios tomados:</label>
+            <div class="checkbox-group">
+                <label><input type="checkbox" name="servicios" value="photobook"> Photobook</label>
+                <label><input type="checkbox" name="servicios" value="video"> Video</label>
+                <label><input type="checkbox" name="servicios" value="cabina360"> Cabina 360</label>
+                <label><input type="checkbox" name="servicios" value="cabinaDivertycam"> Cabina Divertycam</label>
+                <label><input type="checkbox" name="servicios" value="albumTradicional"> Álbum tradicional</label>
+                <label><input type="checkbox" name="servicios" value="libroDeFirmas"> Libro de firmas</label>
+                <label><input type="checkbox" name="servicios" value="clipDeInicio"> Clip de inicio</label>
+            </div>
+
+            <label for="direccionEvento">Dirección del evento:</label>
+            <input type="text" id="direccionEvento" required>
+
+            <button type="submit">Registrar Evento</button>
+        </form>
+    </div>
+
+    <script src="script_eventos.js"></script>
+</body>
+</html>

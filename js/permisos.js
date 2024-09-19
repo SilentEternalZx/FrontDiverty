@@ -54,5 +54,3 @@ const crearPermiso = async() => {
         alert(json.msg) //Imprimir la respuesta
     })
 }
-
-

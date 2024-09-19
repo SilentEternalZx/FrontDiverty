@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gestión de Permisos y Privilegios - Cliente</title>
-    <link rel="stylesheet" href="./css/permisos.css">
+    <link rel="stylesheet" href="../../../css/permisos.css">
 
       <!-- Favicon-->
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="../../../assets/favicon.ico" />
     <!-- Font Awesome icons (free version)-->
     <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
     <!-- Google fonts-->
@@ -29,24 +29,23 @@
                     </button>
                     <div class="collapse navbar-collapse" id="navbarResponsive">
                         <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
-                            <li class="nav-item"><a class="nav-link" href="upload.html">Eventos</a></li>
-                            <li class="nav-item"><a class="nav-link" href="logout.html">Cerrar sesión</a></li>
-                            <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                             <li class="nav-item"><a class="nav-link" href="login.html">Iniciar sesión</a></li>
-                            <li class="nav-item"><a class="nav-link" href="permisosRespaldo.html">Configuración general</a></li>
-
-                 
                         </ul>
                     </div>
                 </div>
             </nav>
         
              <!-- Tabla permisos -->
-            <body>
+            <body onload="listarPermisos()">
         <div class="section">
             <h2>Permisos del Cliente</h2>
             <table id="tablaPermisos">
-                <script src="./js/functions.js"></script>
+                <script src="../../../js/permisos.js"></script>
                 <!--Encabezado tabla-->
                 <thead>
                     <tr>
@@ -56,51 +55,21 @@
                     </tr>
                 </thead>
                 <!--Cuerpo tabla-->
-                <tbody>
-                    <tr>
-                        <td>Iniciar sesión</td>
-                        <td><input type="checkbox"></td>
-                        <td>
-                            
-                            <button id="btn-open-edit">Editar</button>
-                            <button class="delete-btn">Eliminar</button>
-                            <button id="btn-open-privilege">Privilegios</button>
-                            
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Mis fotografías</td>
-                        <td><input type="checkbox"></td>
-                        <td>
-                            <button id="btn-open-edit">Editar</button>
-                            <button class="delete-btn">Eliminar</button>
-                            <button id="btn-open-privilege">Privilegios</button>
-
-                        </td>
-                    </tr>
+                <tbody id="cuerpoTablaPermisos">
                 </tbody>
                     </table>
-                   
+            
             
            <!--Agregar permiso-->
             <div class="add-item">
                 <input type="text" id="nombre_permiso" placeholder="Nombre del nuevo permiso">
                 <button id="addPermission" onclick="crearPermiso()">Agregar Permiso</button>
-                <script src="./js/functions.js"></script>
+                <script src="../../../js/permisos.js"></script>
             </div>
         </div>
-        
-        <dialog id="editModal">
-            <h2>Editar Permiso</h2>
-            <form id="editForm">
-                <label for="editName">Nombre:</label>
-                <input type="text" id="editName" required>
-                <button type="submit">Guardar cambios</button>
-                <button type="button" id="btn-close-edit">Cancelar</button>
-            </form>
-        </dialog>
+
         <!--Tabla modal privilegios-->
-        <dialog id="modalPrivilegio">
+        <dialog id="modal">
             <h2>Privilegios del Cliente</h2>
             <table id="privilegesTable">
                 <!--Encabezado tabla modal-->
@@ -141,9 +110,8 @@
        </dialog>
 
        <!--Script del modal-->
-   <script src="./scripts/permisoScript.js">
+   <script src="../../../scripts/permisoScript.js">
    </script>
-   <script src="./scripts/editarPermisoScript.js"></script>
     
 </body>
  <!-- Footer-->
